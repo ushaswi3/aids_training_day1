@@ -1,0 +1,63 @@
+2025-12-11 11:43:32,488 - INFO - Success: Delhi saved to C:\aids_training_day1\Day14_Api_ETL\ETL_2APIS\data\raw\delhi_normal_20251211_114332.json
+2025-12-11 11:43:33,407 - INFO - Success: Bengaluru saved to C:\aids_training_day1\Day14_Api_ETL\ETL_2APIS\data\raw\bengaluru_normal_20251211_114333.json
+2025-12-11 11:43:34,204 - INFO - Success: Hyderabad saved to C:\aids_training_day1\Day14_Api_ETL\ETL_2APIS\data\raw\hyderabad_normal_20251211_114334.json
+2025-12-11 11:43:34,876 - INFO - Success: Mumbai saved to C:\aids_training_day1\Day14_Api_ETL\ETL_2APIS\data\raw\mumbai_normal_20251211_114334.json
+2025-12-11 11:43:35,569 - INFO - Success: Kolkata saved to C:\aids_training_day1\Day14_Api_ETL\ETL_2APIS\data\raw\kolkata_normal_20251211_114335.json
+2025-12-11 11:50:51,276 - INFO - Success: Delhi saved to C:\aids_training_day1\Day14_Api_ETL\ETL_2APIS\data\raw\delhi_raw_20251211_115051.json
+2025-12-11 11:50:52,789 - INFO - Success: Mumbai saved to C:\aids_training_day1\Day14_Api_ETL\ETL_2APIS\data\raw\mumbai_raw_20251211_115052.json
+2025-12-11 11:50:54,436 - INFO - Success: Bengaluru saved to C:\aids_training_day1\Day14_Api_ETL\ETL_2APIS\data\raw\bengaluru_raw_20251211_115054.json
+2025-12-11 11:50:55,825 - INFO - Success: Hyderabad saved to C:\aids_training_day1\Day14_Api_ETL\ETL_2APIS\data\raw\hyderabad_raw_20251211_115055.json
+2025-12-11 11:50:57,272 - INFO - Success: Kolkata saved to C:\aids_training_day1\Day14_Api_ETL\ETL_2APIS\data\raw\kolkata_raw_20251211_115057.json
+2025-12-11 13:54:47,739 - INFO - Success: Delhi saved to C:\aids_training_day1\Day14_Api_ETL\ETL_2APIS\data\raw\delhi_raw_20251211_135447.json
+2025-12-11 13:54:49,170 - INFO - Success: Mumbai saved to C:\aids_training_day1\Day14_Api_ETL\ETL_2APIS\data\raw\mumbai_raw_20251211_135449.json
+2025-12-11 13:54:50,591 - INFO - Success: Bengaluru saved to C:\aids_training_day1\Day14_Api_ETL\ETL_2APIS\data\raw\bengaluru_raw_20251211_135450.json
+2025-12-11 13:54:52,206 - INFO - Success: Hyderabad saved to C:\aids_training_day1\Day14_Api_ETL\ETL_2APIS\data\raw\hyderabad_raw_20251211_135452.json
+2025-12-11 13:54:53,409 - INFO - Success: Kolkata saved to C:\aids_training_day1\Day14_Api_ETL\ETL_2APIS\data\raw\kolkata_raw_20251211_135453.json
+2025-12-11 13:54:54,911 - INFO - Starting transform step
+2025-12-11 13:54:54,914 - INFO - Found 20 raw files under C:\aids_training_day1\Day14_Api_ETL\ETL_2APIS\data\raw
+2025-12-11 13:54:55,143 - INFO - Combined rows before cleaning: 2400
+2025-12-11 13:54:55,148 - INFO - Dropped 220 rows where all pollutant readings are missing
+2025-12-11 13:54:55,269 - INFO - Saved transformed CSV -> C:\aids_training_day1\Day14_Api_ETL\ETL_2APIS\data\staged\air_quality_transformed.csv
+2025-12-11 13:54:55,269 - INFO - Saved transformed Parquet -> C:\aids_training_day1\Day14_Api_ETL\ETL_2APIS\data\staged\air_quality_transformed.parquet
+2025-12-11 13:54:55,270 - INFO - Transform step finished.
+2025-12-11 13:54:55,270 - INFO - Starting load job
+2025-12-11 13:54:56,241 - INFO - Read CSV with 2180 rows
+2025-12-11 13:54:56,277 - INFO - Inserting batch of 200 rows (attempt 1)
+2025-12-11 13:54:58,116 - INFO - HTTP Request: POST https://gejjmvexqpkdigsimvlv.supabase.co/rest/v1/air_quality_data?columns=%22city%22%2C%22risk_flag%22%2C%22carbon_monoxide%22%2C%22sulphur_dioxide%22%2C%22pm10%22%2C%22hour%22%2C%22time%22%2C%22nitrogen_dioxide%22%2C%22severity_score%22%2C%22pm2_5%22%2C%22uv_index%22%2C%22aqi_category%22%2C%22ozone%22 "HTTP/2 201 Created"
+2025-12-11 13:54:58,122 - INFO - Batch inserted successfully
+2025-12-11 13:54:58,122 - INFO - Inserting batch of 200 rows (attempt 1)
+2025-12-11 13:54:58,281 - INFO - HTTP Request: POST https://gejjmvexqpkdigsimvlv.supabase.co/rest/v1/air_quality_data?columns=%22city%22%2C%22risk_flag%22%2C%22carbon_monoxide%22%2C%22sulphur_dioxide%22%2C%22pm10%22%2C%22hour%22%2C%22time%22%2C%22nitrogen_dioxide%22%2C%22severity_score%22%2C%22pm2_5%22%2C%22uv_index%22%2C%22aqi_category%22%2C%22ozone%22 "HTTP/2 201 Created"
+2025-12-11 13:54:58,284 - INFO - Batch inserted successfully
+2025-12-11 13:54:58,284 - INFO - Inserting batch of 200 rows (attempt 1)
+2025-12-11 13:54:58,531 - INFO - HTTP Request: POST https://gejjmvexqpkdigsimvlv.supabase.co/rest/v1/air_quality_data?columns=%22city%22%2C%22risk_flag%22%2C%22carbon_monoxide%22%2C%22sulphur_dioxide%22%2C%22pm10%22%2C%22hour%22%2C%22time%22%2C%22nitrogen_dioxide%22%2C%22severity_score%22%2C%22pm2_5%22%2C%22uv_index%22%2C%22aqi_category%22%2C%22ozone%22 "HTTP/2 201 Created"
+2025-12-11 13:54:58,535 - INFO - Batch inserted successfully
+2025-12-11 13:54:58,535 - INFO - Inserting batch of 200 rows (attempt 1)
+2025-12-11 13:54:58,668 - INFO - HTTP Request: POST https://gejjmvexqpkdigsimvlv.supabase.co/rest/v1/air_quality_data?columns=%22city%22%2C%22risk_flag%22%2C%22carbon_monoxide%22%2C%22sulphur_dioxide%22%2C%22pm10%22%2C%22hour%22%2C%22time%22%2C%22nitrogen_dioxide%22%2C%22severity_score%22%2C%22pm2_5%22%2C%22uv_index%22%2C%22aqi_category%22%2C%22ozone%22 "HTTP/2 201 Created"
+2025-12-11 13:54:58,670 - INFO - Batch inserted successfully
+2025-12-11 13:54:58,671 - INFO - Inserting batch of 200 rows (attempt 1)
+2025-12-11 13:54:58,824 - INFO - HTTP Request: POST https://gejjmvexqpkdigsimvlv.supabase.co/rest/v1/air_quality_data?columns=%22city%22%2C%22risk_flag%22%2C%22carbon_monoxide%22%2C%22sulphur_dioxide%22%2C%22pm10%22%2C%22hour%22%2C%22time%22%2C%22nitrogen_dioxide%22%2C%22severity_score%22%2C%22pm2_5%22%2C%22uv_index%22%2C%22aqi_category%22%2C%22ozone%22 "HTTP/2 201 Created"
+2025-12-11 13:54:58,826 - INFO - Batch inserted successfully
+2025-12-11 13:54:58,826 - INFO - Inserting batch of 200 rows (attempt 1)
+2025-12-11 13:54:58,983 - INFO - HTTP Request: POST https://gejjmvexqpkdigsimvlv.supabase.co/rest/v1/air_quality_data?columns=%22city%22%2C%22risk_flag%22%2C%22carbon_monoxide%22%2C%22sulphur_dioxide%22%2C%22pm10%22%2C%22hour%22%2C%22time%22%2C%22nitrogen_dioxide%22%2C%22severity_score%22%2C%22pm2_5%22%2C%22uv_index%22%2C%22aqi_category%22%2C%22ozone%22 "HTTP/2 201 Created"
+2025-12-11 13:54:58,985 - INFO - Batch inserted successfully
+2025-12-11 13:54:58,986 - INFO - Inserting batch of 200 rows (attempt 1)
+2025-12-11 13:54:59,132 - INFO - HTTP Request: POST https://gejjmvexqpkdigsimvlv.supabase.co/rest/v1/air_quality_data?columns=%22city%22%2C%22risk_flag%22%2C%22carbon_monoxide%22%2C%22sulphur_dioxide%22%2C%22pm10%22%2C%22hour%22%2C%22time%22%2C%22nitrogen_dioxide%22%2C%22severity_score%22%2C%22pm2_5%22%2C%22uv_index%22%2C%22aqi_category%22%2C%22ozone%22 "HTTP/2 201 Created"
+2025-12-11 13:54:59,137 - INFO - Batch inserted successfully
+2025-12-11 13:54:59,137 - INFO - Inserting batch of 200 rows (attempt 1)
+2025-12-11 13:54:59,305 - INFO - HTTP Request: POST https://gejjmvexqpkdigsimvlv.supabase.co/rest/v1/air_quality_data?columns=%22city%22%2C%22risk_flag%22%2C%22carbon_monoxide%22%2C%22sulphur_dioxide%22%2C%22pm10%22%2C%22hour%22%2C%22time%22%2C%22nitrogen_dioxide%22%2C%22severity_score%22%2C%22pm2_5%22%2C%22uv_index%22%2C%22aqi_category%22%2C%22ozone%22 "HTTP/2 201 Created"
+2025-12-11 13:54:59,307 - INFO - Batch inserted successfully
+2025-12-11 13:54:59,307 - INFO - Inserting batch of 200 rows (attempt 1)
+2025-12-11 13:54:59,442 - INFO - HTTP Request: POST https://gejjmvexqpkdigsimvlv.supabase.co/rest/v1/air_quality_data?columns=%22city%22%2C%22risk_flag%22%2C%22carbon_monoxide%22%2C%22sulphur_dioxide%22%2C%22pm10%22%2C%22hour%22%2C%22time%22%2C%22nitrogen_dioxide%22%2C%22severity_score%22%2C%22pm2_5%22%2C%22uv_index%22%2C%22aqi_category%22%2C%22ozone%22 "HTTP/2 201 Created"
+2025-12-11 13:54:59,445 - INFO - Batch inserted successfully
+2025-12-11 13:54:59,445 - INFO - Inserting batch of 200 rows (attempt 1)
+2025-12-11 13:54:59,564 - INFO - HTTP Request: POST https://gejjmvexqpkdigsimvlv.supabase.co/rest/v1/air_quality_data?columns=%22city%22%2C%22risk_flag%22%2C%22carbon_monoxide%22%2C%22sulphur_dioxide%22%2C%22pm10%22%2C%22hour%22%2C%22time%22%2C%22nitrogen_dioxide%22%2C%22severity_score%22%2C%22pm2_5%22%2C%22uv_index%22%2C%22aqi_category%22%2C%22ozone%22 "HTTP/2 201 Created"
+2025-12-11 13:54:59,567 - INFO - Batch inserted successfully
+2025-12-11 13:54:59,567 - INFO - Inserting batch of 180 rows (attempt 1)
+2025-12-11 13:54:59,669 - INFO - HTTP Request: POST https://gejjmvexqpkdigsimvlv.supabase.co/rest/v1/air_quality_data?columns=%22city%22%2C%22risk_flag%22%2C%22carbon_monoxide%22%2C%22sulphur_dioxide%22%2C%22pm10%22%2C%22hour%22%2C%22time%22%2C%22nitrogen_dioxide%22%2C%22severity_score%22%2C%22pm2_5%22%2C%22uv_index%22%2C%22aqi_category%22%2C%22ozone%22 "HTTP/2 201 Created"
+2025-12-11 13:54:59,672 - INFO - Batch inserted successfully
+2025-12-11 13:54:59,675 - INFO - Load job finished
+2025-12-11 13:55:00,365 - INFO - Fetching data from Supabase...
+2025-12-11 13:55:01,691 - INFO - HTTP Request: GET https://gejjmvexqpkdigsimvlv.supabase.co/rest/v1/air_quality_data?select=%2A "HTTP/2 200 OK"
+2025-12-11 13:55:01,710 - INFO - Loaded 1000 rows from Supabase
+2025-12-11 13:55:01,732 - INFO - Saved CSVs to data\processed
+2025-12-11 13:55:03,091 - INFO - Saved plots to data\processed

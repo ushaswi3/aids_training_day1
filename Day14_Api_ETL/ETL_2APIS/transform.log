@@ -1,0 +1,7 @@
+2025-12-11 11:53:24,256 - INFO - Starting transform step
+2025-12-11 11:53:24,257 - INFO - Found 15 raw files under C:\aids_training_day1\Day14_Api_ETL\ETL_2APIS\data\raw
+2025-12-11 11:53:24,618 - INFO - Combined rows before cleaning: 1800
+2025-12-11 11:53:24,625 - INFO - Dropped 165 rows where all pollutant readings are missing
+2025-12-11 11:53:25,049 - INFO - Saved transformed CSV -> C:\aids_training_day1\Day14_Api_ETL\ETL_2APIS\data\staged\air_quality_transformed.csv
+2025-12-11 11:53:25,050 - INFO - Saved transformed Parquet -> C:\aids_training_day1\Day14_Api_ETL\ETL_2APIS\data\staged\air_quality_transformed.parquet
+2025-12-11 11:53:25,050 - INFO - Transform step finished.

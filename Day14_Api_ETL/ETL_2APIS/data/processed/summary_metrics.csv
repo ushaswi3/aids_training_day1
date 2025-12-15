@@ -1,0 +1,2 @@
+city_highest_avg_pm25,highest_avg_pm25_value,city_highest_severity,highest_severity_value,pct_high_risk_hours,pct_moderate_risk_hours,pct_low_risk_hours,worst_hour_pm25,worst_hour_pm25_value
+Delhi,75.15076452599388,Delhi,3283.8116207951066,0.0,0.0,0.0,2,69.4375

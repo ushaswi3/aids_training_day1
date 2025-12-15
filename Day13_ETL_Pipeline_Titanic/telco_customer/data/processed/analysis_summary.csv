@@ -1,0 +1,13 @@
+metric,value
+total_rows,7043.0
+churn_percentage,26.536987079369588
+avg_monthly_contract_Month-to-month,66.39849032258064
+avg_monthly_contract_One year,65.04860828241684
+avg_monthly_contract_Two year,60.770412979351036
+tenure_group_count_New,2186.0
+tenure_group_count_Regular,1806.0
+tenure_group_count_Loyal,1644.0
+tenure_group_count_Champion,1407.0
+internet_service_Fiber optic,3096.0
+internet_service_DSL,2421.0
+internet_service_No,1526.0
